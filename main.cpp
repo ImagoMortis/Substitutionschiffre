@@ -2,16 +2,13 @@
 #include <fstream>
 using namespace std;
 
-
-
 int main() {
-
-
-
 
 fstream newfile;
 newfile.open("chiffre.txt",ios::in);
-if(newfile.is_open()){
+
+if(newfile.is_open())
+{
     string chiffre;
     while(getline(newfile, chiffre)){
 
@@ -27,13 +24,13 @@ if(newfile.is_open()){
         }else if(chiffre[i] == 'm'){
             chiffre[i] = 'A';
         }else if(chiffre[i] == 'r'){
-            chiffre[i] = 'H'; //ehemals O
+            chiffre[i] = 'H';
         }else if(chiffre[i] == 'y'){
-            chiffre[i] = 'N'; // ehemals N
+            chiffre[i] = 'N';
         }else if(chiffre[i] == 'x'){
             chiffre[i] = 'I';
         }else if(chiffre[i] == 'q') {
-            chiffre[i] = 'O'; //ehemals H
+            chiffre[i] = 'O';
         }else if(chiffre[i] == 'd') {
             chiffre[i] = 'S';
         }else if(chiffre[i] == 'f') {
@@ -49,7 +46,7 @@ if(newfile.is_open()){
         }else if(chiffre[i] == 'i') {
             chiffre[i] = 'C';
         }else if(chiffre[i] == 'o') {
-            chiffre[i] = 'M'; //ehemals w
+            chiffre[i] = 'M';
         }else if(chiffre[i] == 't') {
             chiffre[i] = 'B';
         }else if(chiffre[i] == '?') {
@@ -59,7 +56,7 @@ if(newfile.is_open()){
         }else if(chiffre[i] == 'n') {
             chiffre[i] = 'G';
         }else if(chiffre[i] == 'k') {
-            chiffre[i] = 'P'; // ehemals B
+            chiffre[i] = 'P';
         }else if(chiffre[i] == 'g') {
             chiffre[i] = 'K';
         }else if(chiffre[i] == 'v') {
@@ -73,16 +70,12 @@ if(newfile.is_open()){
         }else if(chiffre[i] == 'w') {
             chiffre[i] = 'z';
         }
-        
+
     }
     cout << chiffre << endl;
 }
 
 }
-
-
-
-
 
 
     return 0;
