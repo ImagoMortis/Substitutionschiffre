@@ -68,7 +68,7 @@ if(newfile.is_open())
         }else if(chiffre[i] == 'c') {
             chiffre[i] = 'X';
         }else if(chiffre[i] == 'w') {
-            chiffre[i] = 'z';
+            chiffre[i] = 'Z';
         }
 
     }
