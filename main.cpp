@@ -73,6 +73,8 @@ if(newfile.is_open())
 
     }
     cout << chiffre << endl;
+
+    newfile.write(chiffre);
 }
 
 }
